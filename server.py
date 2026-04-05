@@ -24,10 +24,9 @@ def webhook():
         color = 0x2ECC71 if signal == "LONG" else 0xE74C3C
         emoji = "\U0001f7e2" if signal == "LONG" else "\U0001f534"
 
-        # P&L formatting
+      # P&L formatting
         if isinstance(pnl, (int, float)):
-            pnl_emoji = "\u2705" if pnl >= 0 else "\u274c"
-            pnl_str = f"{pnl_emoji} {pnl:+.2f}%"
+            pnl_str = f"{pnl:+.2f}%"
         else:
             pnl_str = "N/A"
 
