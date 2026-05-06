@@ -45,7 +45,7 @@ def webhook():
                 {"name": "Close", "value": close_str, "inline": True},
                 {"name": "Date", "value": date, "inline": True},
                 {"name": "Entry Price", "value": entry_str, "inline": True},
-                {"name": "P&L (5x)", "value": pnl_str, "inline": True},
+                {"name": "P&L", "value": pnl_str, "inline": True},
             ],
             "footer": {"text": "TTS \u2022 Daily Close \u2022 20% allocation \u00b7 5x leverage"},
         }
